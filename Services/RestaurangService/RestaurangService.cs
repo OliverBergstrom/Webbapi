@@ -15,7 +15,11 @@ namespace Webbapi.Services.RestaurangService
             new Restaurang(),
             new Restaurang {Adress = "Ulfstorg 32",Namn = "Jakobs korvar"}
         };
+
+        
+
         private readonly IMapper _mapper;
+        private readonly DataContext context;
 
         public RestaurangService(IMapper mapper)
         {

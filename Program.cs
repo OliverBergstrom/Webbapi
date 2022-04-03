@@ -1,8 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Webbapi.Models;
 using Webbapi.Services.RestaurangService;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddScoped<IRestaurangService, RestaurangService>();
