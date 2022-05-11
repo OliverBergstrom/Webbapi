@@ -20,9 +20,9 @@ namespace Webbapi.Controllers
         }
 
         [HttpGet("GetAll")]
-        public async Task<ActionResult<ServiceResponse<List<GetRestaurangDto>>>> Get()
+        public ActionResult<List<Restaurang>> Get()
         {
-            return Ok(await _restaurangService.GetAllRestaurang());
+            return Ok(_restaurangService.GetAllRestaurang());
         }
 
         [HttpGet("{Adress}")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6r+HbozUlw08KYUq7UeoZTFZfJuzLCgXzeyognjomSDuvHa9G2fC4QSWfKyzTrWyauQlZ4Qr7KhAs1DsyNCIBg==",
+  "dgSpecHash": "NJttIMh4DBlT9V2diFrlkIsSHDPeBKeSCsLNo8aOe8JQuHeNRX5htK0/x4c54eQ7szK7p2nkJtyfejgitu+DiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Oliver.Bergstrom1\\Documents\\Visual Studio Code\\Webbapi\\Webbapi.csproj",
+  "projectFilePath": "C:\\Users\\Oliver.Bergstrom1\\Webbapi\\Webbapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Oliver.Bergstrom1\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Oliver.Bergstrom1\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

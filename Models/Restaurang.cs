@@ -12,9 +12,6 @@ namespace Webbapi.Models
 
         public Maträtter typ {get; set;} = Maträtter.Kött;
 
-        internal static void Add(Restaurang newRestaurang)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

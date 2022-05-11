@@ -5,7 +5,7 @@ namespace Webbapi.Services.RestaurangService
 {
     public interface IRestaurangService
     {
-        Task<ServiceResponse<GetRestaurangDto>> GetAllRestaurang();
+        List<Restaurang> GetAllRestaurang();
 
         Task<ServiceResponse<GetRestaurangDto>> GetRestaurangByAdress(string Adress);
 

@@ -2081,11 +2081,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oliver.Bergstrom1\\Documents\\Visual Studio Code\\Webbapi\\Webbapi.csproj",
+      "projectUniqueName": "C:\\Users\\Oliver.Bergstrom1\\Webbapi\\Webbapi.csproj",
       "projectName": "Webbapi",
-      "projectPath": "C:\\Users\\Oliver.Bergstrom1\\Documents\\Visual Studio Code\\Webbapi\\Webbapi.csproj",
+      "projectPath": "C:\\Users\\Oliver.Bergstrom1\\Webbapi\\Webbapi.csproj",
       "packagesPath": "C:\\Users\\Oliver.Bergstrom1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oliver.Bergstrom1\\Documents\\Visual Studio Code\\Webbapi\\obj\\",
+      "outputPath": "C:\\Users\\Oliver.Bergstrom1\\Webbapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Oliver.Bergstrom1\\AppData\\Roaming\\NuGet\\NuGet.Config",

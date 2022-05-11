@@ -52,11 +52,9 @@ namespace Webbapi.Services.RestaurangService
             return ServiceResponse;
         }
 
-        public async Task<ServiceResponse<List<GetRestaurangDto>>> GetAllRestaurang()
+        public List<Restaurang> GetAllRestaurang()
         {
-            var ServiceResponse = new ServiceResponse<List<GetRestaurangDto>>();
-            ServiceResponse.Data = restauranger.Select(c => _mapper.Map<GetRestaurangDto>(c)).ToList();
-            return ServiceResponse;
+           return restauranger;
         }
 
         public async Task<ServiceResponse<GetRestaurangDto>> GetRestaurangByAdress(string Adress)
@@ -100,9 +98,5 @@ namespace Webbapi.Services.RestaurangService
             throw new NotImplementedException();
         }
 
-        Task<ServiceResponse<GetRestaurangDto>> IRestaurangService.GetAllRestaurang()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

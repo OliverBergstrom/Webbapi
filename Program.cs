@@ -11,6 +11,19 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(build
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddScoped<IRestaurangService, RestaurangService>();
 
+var provider = builder.Services.BuildServiceProvider();
+var Configuration = provider.GetRequiredService<IConfiguration>();
+
+builder.Services.AddCors(options => 
+{
+    var frontendURL = Configuration.GetValue<string>("frontend_url");
+
+    options.AddDefaultPolicy(builder => 
+    {
+        builder.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -26,6 +39,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 
